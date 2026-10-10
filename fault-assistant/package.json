@@ -1,0 +1,28 @@
+{
+  "name": "fault-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline, on-device troubleshooting assistant for maintenance technicians (Gujarati and English).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm run build:manuals && npm run build:assets",
+    "build:manuals": "node scripts/build-index.mjs",
+    "build:assets": "node scripts/build-assets.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "node tests/e2e/offline.e2e.mjs"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-gujarati": "5.3.0",
+    "@tesseract.js-data/eng": "1.0.0",
+    "@tesseract.js-data/guj": "1.0.0",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "6.4.299",
+    "playwright-core": "1.58.0"
+  }
+}

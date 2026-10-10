@@ -1,0 +1,14 @@
+{
+  "name": "Fault Assistant · ખામી સહાયક",
+  "short_name": "Fault Assistant",
+  "description": "Offline troubleshooting from site manuals, in Gujarati and English.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#1f3a5f",
+  "lang": "en",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
