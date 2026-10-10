@@ -1,0 +1,6 @@
+/* Noto Sans Gujarati is vendored at build time (see scripts/build-assets.mjs).
+   Gujarati and Latin subsets are imported separately so the browser fetches only needed glyphs. */
+@import url("vendor/fonts/gujarati-400.css");
+@import url("vendor/fonts/gujarati-700.css");
+@import url("vendor/fonts/latin-400.css");
+@import url("vendor/fonts/latin-700.css");
